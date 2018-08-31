@@ -10,4 +10,33 @@ This module can be used in design->layout
 * Modify the logics according to your needs
 * Enjoy~
 
+
+## Examples
+### 1. our_service
+For layout: 1title + 1description + 3columns(1title + 1description) + 1text
+
+e.g.
+
+<table style="text-align: center;">
+<tr>
+  <td colspan="3">title</td>
+</tr>
+<tr>
+  <td colspan="3">description</td>
+</tr>
+<tr>
+  <td>title</td>
+  <td>title</td>
+  <td>title</td>
+</tr>
+<tr>
+  <td>title</td>
+  <td>title</td>
+  <td>title</td>
+</tr>
+<tr>
+  <td colspan="3">button text</td>
+</tr>
+</table>
+
 &copy; Yilong Huang, 2018
