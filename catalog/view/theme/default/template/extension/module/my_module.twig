@@ -1,5 +1,29 @@
-{% if section_title %}
-<h2>{{ section_title }}</h2>
-{% endif %}
-{{ description }}
-{{ column1_title }}
+<div class="main-row" style="text-align: center;">
+  <div class="container">
+    <div class="row">
+      <div class="main-col col-sm-12 col-md-12">
+        <div class="row sub-row">
+          <div class="sub-col col-sm-12 col-md-12">
+            <div class="module-title">
+              {% if section_title %}
+              <p class="sub-title">{{description}}</p>
+              {% endif %}
+              <h2>{{ section_title }}</h2>
+            </div>
+            <div class="row">
+              {% for field in fields%}
+              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <div class="box box3">
+                  <img style="margin-bottom: 8px; width: 50px;" src="image/{{field['img1']}}">
+                  <h4>{{ field['title'] }}</h4>
+                  <p>{{ field['content1'] }}</p>
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
